@@ -1,0 +1,18 @@
+meta {
+  name: create stock
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:8080/v1/stocks
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "stockId": "MGLU3",
+    "description": "Magazine Luiza"
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: get user by id
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:8080/v1/users/c8a07501-b9bb-44bb-b8fc-01e6fced7786
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "lucas",
+    "email": "lucas@acme.com",
+    "password": "123"
+  }
+}

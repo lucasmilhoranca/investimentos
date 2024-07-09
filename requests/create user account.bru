@@ -1,0 +1,19 @@
+meta {
+  name: create user account
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/v1/users/52e3a087-4a45-419a-b00f-9d3254478af6/accounts
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "description": "Conta de Investimentos",
+    "street": "Rua",
+    "number": 500
+  }
+}
